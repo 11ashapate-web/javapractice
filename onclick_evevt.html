@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <script>
+        function showMessage() {
+            alert("Button Clicked!");
+        }
+    </script>
+ 
+
+ <p onmouseover="changeColor()" id="text">hello asha </p>
+
+<script>
+function changeColor() {
+    document.getElementById("text").style.color = "red";
+}
+</script>
+<button id="btn">Click</button>
+
+<script>
+let button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+    alert("Button clicked using addEventListener");
+});
+</script>
+<button id="btn">Click Me</button>
+
+<script>
+let button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+    button.innerText = "Submit";
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- .1  Create an object student with properties name,
+     age, and marks. Write a function that calculates whether the student passed (marks ≥ 40) -->
+    <!-- <script>
+        let student = {
+    name: "Asha",
+    age: 27,
+    marks: 45
+};
+
+ 
+function checkResult(student) {
+    if (student.marks >= 40) {
+        return student.name + " has passed.";
+    } else {
+        return student.name + " has failed.";
+    }
+}
+
+document.write(checkResult(student));
+    </script> -->
+    <!-- 2.You have an array of employee objects: [{name: 'Amit', salary: 40000},
+     {name: 'Priya', salary: 55000}]. Write a function that increases everyone’s salary by 10%
+    <script>
+        let employees = [
+  { name: 'Amit', salary: 40000 },
+  { name: 'Priya', salary: 55000 }
+];
+
+function increaseSalary(empArray) {
+  return empArray.map(emp => {
+    return {
+      name: emp.name,
+      salary: emp.salary * 1.10
+    };
+  });
+}
+
+let updatedEmployees = increaseSalary(employees);
+
+document.write(updatedEmployees);
+    </script>
+    . 3.Given an object of item prices: {apple: 100, banana: 60, mango: 150}. Write a function that
+returns the total cost of all items. -->
+    <script>
+        let prices = {
+            apple: 100,
+            banana: 60,
+            mango: 150
+        };
+
+        function getTotallet(items) {
+            let total = 0;
+
+            for (let key in items) {
+                total += items[key];
+            }
+
+            return total;
+        }
+
+        let totallet = getTotallet(prices);
+        document.write(totallet +"<br>");
+
+    </script>
+    . <!-- 4.Create a car object with properties brand, speed, and a method accelerate() that increases
+speed by 10. Display the new speed after calling the method twice. -->
+    <script>
+        let car = {
+            brand: "Toyota",
+            speed: 50,
+
+            accelerate: function () {
+                this.speed += 10;
+                return this.speed;
+            }
+        };
+
+        car.accelerate();
+        car.accelerate();
+
+        document.write("New Speed:", car.speed +"<br>");
+
+    </script>
+    <!-- 5.Write a function
+     that takes an object and prints all keys and values in the format: key: value. -->
+    <script>
+        function printObject(obj) {
+            for (let key in obj) {
+                document.write(key + ": " + obj[key] +"<br>");
+            }
+        }
+
+
+        const person = {
+            name: "Asha",
+            age: 27,
+            city: "Delhi"
+        };
+
+        printObject(person );
+    </script>
+    <!--6. You have an array of numbers [2, 4, 6, 8]. Write a
+      function that returns a new array with each number squared -->
+     <script>
+        function squareNumbers(arr) {
+  return arr.map(num => num * num);
+}
+let number1 = [2, 4, 6, 8];
+let result1 = squareNumbers(number1);
+
+document.write(result1 +"<br>"); 
+
+    </script>
+    <!-- 7. Create a function that removes duplicate values from an array. -->
+    <script>
+        function removeDuplicates(arr) {
+            return [...new Set(arr)];
+        }
+
+        let numbers = [1, 2, 2, 3, 4, 4, 5];
+        let result = removeDuplicates(numbers);
+
+        document.write(result +"<br>");
+    </script>
+    <!--  8. Write a function that counts how many times 
+      each element appears in an array and returns an object -->
+    <script>
+        function countElements(arr) {
+            let count = {};
+
+            for (let item of arr) {
+                count[item] = (count[item] || 0) + 1;
+            }
+
+            return count;
+        }
+        let number2 = [1, 2, 2, 3, 3, 3, 4];
+
+        let results2= countElements(number2);
+        document.write( JSON.stringify(results2) +"<br>");
+    </script>
+</body>
+
+</html>

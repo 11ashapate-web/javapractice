@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <!-- <script>
+       {
+const car ={
+            type:" fiat",
+            model:"500",
+            color: "white",
+           
+        }
+         document.write (" the car type is" + car.type);
+       } 
+    </script> -->
+  <!-- 01 car is fiat 
+    model 500 and color white -->
+  <!-- <script>
+        const car={
+            type:" fiat",
+            model: "500",
+            color:"white"
+        }
+        document.write(" the car type is"+ car.type + " model " + car.model + " and color "+ car.color);
+    </script> -->
+
+  <!--  <!--   02 Create a JavaScript object car with properties brand, model, and year. -->
+  <!-- <script>
+    let car = {
+  brand: "BMW",
+  model: "Fortuner",
+  year: 2023
+};
+
+document.write("Brand: " + car.brand + "<br>");
+document.write("Model: " + car.model + "<br>");
+document.write("Year: " + car.year);
+</script>
+14-04-25
+
+<!-- 03 What will be the output of an object with duplicate keys -->
+  <!--   <script>
+  let car = {
+    a: 1,
+    b: 2,
+    a: 3
+  };
+
+  document.write("a: " + car.a + "<br>");
+  document.write("b: " + car.b + "<br>");
+  
+</script> -->
+  <!--04 What will be the output of console.log(person.height) when height doesn't exist -->
+
+  <!-- <script>
+ 
+let person = {
+  name: "Asha",
+  age: 27
+};
+
+document.write(person.name + "<br>");
+document.write(person.age);
+</script> -->
+  <!--05 How can you delete a property from an object in JavaScript? -->
+  <!-- <script>
+let car = {
+    name: "ashu",
+    age: 27
+};
+delete car.age;
+
+document.write(car.name + "<br>");
+document.write(car.age); 
+</script> -->
+  <!--06 Merge two objects obj1 and obj2 into one. -->
+
+  <!-- <script>
+let car = {
+    name: "ashu",
+    age: 27
+};
+
+let obj2 = {
+    color: "black",
+    city: "noida"
+};
+
+let merged = { ...car, ...obj2 };
+
+ document.write("Name: " + merged.name + "<br>");
+document.write("Age: " + merged.age + "<br>");
+document.write("Color: " + merged.color + "<br>");
+document.write("City: " + merged.city);
+</script> -->
+  <!--07 Check if the property age exists in an object -->
+  <!-- <script>
+let person = {
+  name: "Asha",
+  age: 27
+};
+
+document.write("age exists: " + ("age" in person));
+</script> -->
+  <!-- 08 Loop through all properties of an object and print key-value pairs -->
+  <!-- <script>
+let person = {
+  name: "Asha",
+  age: 27,
+  city: "Delhi"
+};
+
+for (let key in person) {
+  document.write(key + ": " + person[key] + "<br>");
+}
+</script> -->
+  <!-- 09 Sum all values of an object -->
+  <script>
+    let marks = {
+      math: 80,
+      science: 70,
+      english: 90
+    };
+
+    let sum = 0;
+
+    for (let key in marks) {
+      sum += marks[key];
+    }
+
+    document.write("Total: " + sum);
+  </script>
+  <!-- 10 Find student with highest marks -->
+  <script>
+    let students = [
+      { name: "Asha", marks: 80 },
+      { name: "Bishu", marks: 90 },
+      { name: "Pooja", marks: 70 }
+    ];
+    let topStudent = students[0];
+
+    for (let i = 1; i < students.length; i++) {
+      if (students[i].marks > topStudent.marks) {
+        topStudent = students[i];
+      }
+    }
+    document.write("Topper: " + topStudent.name + " (" + topStudent.marks + ")");
+  </script>
+
+</html>

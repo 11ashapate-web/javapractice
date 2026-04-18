@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  <script>
+        const x = 20
+        x = 56
+        {
+            const x = 34
+            document.write(x)
+        }
+        document.write(x)
+
+    </script> -->
+    <!--  1. Can we re-declare a const variable in the same block? -->
+    <script>
+        const marks = 85;
+        const marks = 90;
+        document.write(marks);
+    </script>
+    <!--  2.After running the code you shared, the value of project.status will be "Completed". -->
+    <script>
+        const project = {
+            title: "DDAS HUB",
+            status: "Pending"
+        };
+        project.status = "Completed";
+        document.write(project.status);
+
+    </script>
+    <!-- 3.What will be the final output of console.log(projects), and why does the .push() 
+   method not cause an error even though the array is declared with const -->
+    <script>
+        const projects = ["DDAS HUB", "Smart Alarm"];
+
+        document.write(projects);
+    </script>
+
+</body>
+
+</html>

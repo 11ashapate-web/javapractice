@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+        <!-- 1. Initialize a variable score with 100. Update its value to 150 without re-declaring it -->
+    
+    <script>
+        let score = 100;
+     score =150;
+        document.write ("updated score:"  + score+ "<br>");
+
+    </script>
+
+         <!--  Write a for loop that iterates from 1 to 5 using let i. Inside the loop,
+          print the value of i. After the loop finishes, try to access i outside the loop 
+          using console.log(i).  -->
+    <script>
+        for (let i = 1; i <=5; i++){
+
+            document.write("inside loop -i is:"+i+"<br>");
+       }
+    
+        </script>
+        <!-- 3.Write a code where you try to console.log(tax) 
+        first, and then declare let tax = 10; on the next line. Observe the error -->
+        <script>
+      let tax = 10;  
+      document.write("Tax amount is: " + tax); 
+
+            document.write("Tax amount is: " + tax);
+            let tax = 10;   
+        </script>
+</body>
+</html>

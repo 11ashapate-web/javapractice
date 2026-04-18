@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let student = []
+        
+        for (let i=0; i<3; i++){
+          let value = prompt("enter name")
+          student.push(value)
+        }
+        
+
+
+        let percentage = []
+        for (let i=0; i<3; i++){
+          let value = prompt("enter percentage")
+          percentage.push(value)
+        }
+        document.write(percentage)
+        document.write(student)
+
+let students = []
+let marks = []
+
+// Take input
+for (let i = 0; i < 5; i++) {
+    let name = prompt("Enter student name")
+    let mark = prompt("Enter student marks")
+
+    students.push(name)
+    marks.push(mark)
+}
+
+// Print names
+document.write("Student Names:<br>")
+for (let i = 0; i < students.length; i++) {
+    document.write(students[i] + "<br>")
+}
+
+document.write("<br>Student Marks:<br>")
+
+// Print marks
+for (let i = 0; i < marks.length; i++) {
+    document.write(marks[i] + "<br>")
+}
+
+
+
+    </script>
+</body>
+</html>
