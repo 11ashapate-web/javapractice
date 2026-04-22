@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let student=["ashu","bishu","asha","vishu"]
-       /*  student.shift() */
-       /* student.unshift("asha") */
-       /* student.pop() */
-       student.splice(2,0 "lemon","kiwi");
-        document.write(student)
+        let student = ["ashu", "bishu", "asha", "vishu"];
+
+        student.splice(2, 0, "lemon", "kiwi");
+
+        document.write(student + "<br>");
 
     </script>
-    
+    <!-- 01Given an array ["1, 2, 3, 4, 5"] Use the map() method to double all the numbers.? -->
+    <script>
+
+        let number = [1, 2, 3, 4, 5];
+
+        let doubled = number.map(num => num * 2);
+
+        document.write(doubled + "<br>");
+
+    </script>
+    <!-- 02  Given an array [10, 20, 30, 40] Use the filter() method to return only the numbers greater than 25? -->
+    <script>
+        let numbers = [10, 20, 30, 40];
+        let result = numbers.filter(function (num) {
+            return num > 25;
+        });
+
+        document.write(result + "<br>");
+
+    </script>
+    <!--  03 Given an array ["apple", "banana", "mango"] Use the forEach() method to print all the elements.
+ -->
+    <script>
+        let fruits = ["apple", "banana", "mango"];
+
+        fruits.forEach(function (item) {
+            document.write(item + "<br>");
+        });
+    </script>
+    <!-- 04 Given an array [5, 10, 15] Use the reduce() method to find the sum. -->
+    <script>
+
+        let num = [5, 10, 15];
+        let sum = num.reduce(function (acc, curr) {
+            return acc + curr;
+        }, 0);
+
+        document.write(sum);
+    </script>
+
 </body>
+
 </html>
